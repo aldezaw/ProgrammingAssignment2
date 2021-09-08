@@ -19,7 +19,7 @@ cacheSolve <- function(x, ...) {
     return(m)
   }
   data <- x$get()
-  m <- solve(data, ...)
+  inv <- solve(data, ...)
   x$setINV(inv)
   inv
 }
